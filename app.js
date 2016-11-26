@@ -4,11 +4,6 @@
         $("#quote").removeClass("executed");
         $("#writer").toggleClass("fade");
         setTimeout(function(){ 
-          $.ajax({
-            crossOrigin: true,
-            url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=mycallback",
-            dataType:"jsonp"
-        });
         }, 1000); 
       }
   });
